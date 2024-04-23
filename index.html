@@ -7,18 +7,18 @@
     <style>
         .image-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 自适应调整列数 */
-            gap: 10px; /* 图片之间的间距 */
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* 自适应调整列数 */
+            gap : 5px;
         }
 
         .image-grid-item {
             max-width: 600px; /* 每张图片的最大宽度 */
-            max-height: 400px; /* 每张图片的最大高度 */
+            max-height: 600px; /* 每张图片的最大高度 */
             overflow: hidden; /* 超出部分隐藏 */
         }
 
-        .image-grid-item img {
-            width: 100%; /* 图片宽度填充父容器 */
+        img {
+            width: auto; /* 图片宽度填充父容器 */
             height: 100%; /* 图片高度填充父容器 */
             display: block; /* 去除图片默认间距 */
         }
